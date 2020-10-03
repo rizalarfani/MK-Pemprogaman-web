@@ -1,0 +1,117 @@
+/* import font */
+@font-face {
+    font-family: "roboto-bold";
+    src: url("font/RobotoCondensed-Bold.ttf");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("font/RobotoCondensed-Light.ttf");
+}
+
+html, body {
+    background-color: #EDF0F0;
+    height: 100%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.login-panel{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.login-item {
+    width: 50%;
+}
+.login-right{
+    background-image: linear-gradient(60deg, #5497FF, #146aeb);
+    color: white;
+}
+.login-right .header{
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: "roboto-bold";
+}
+.login-right .content{
+    padding: 35px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.login-right .content h2{
+    text-align: end;
+    font-family: "roboto-bold";
+    font-size: 25px;
+}
+.login-right .content p {
+    font-size: 14px;
+    text-align: end;
+    color: #8CB9FF;
+    font-family: "roboto";
+}
+.login-left {
+    background-color: #F4F6F6;
+}
+.login-left .header {
+    padding-top: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.login-left .header p {
+    font-size: 13px;
+    color: #146aeb;
+    margin-right: 20px;
+    text-align: start;
+}
+.btn {
+    font-weight: 400;
+    color: #858796;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: .45rem;
+}
+.btn-login {
+    background-color: #FFFFFF;
+    color: #146aeb;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.login-left .content{
+    height: 80%;   
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.form-container{
+   padding-bottom: 20px;
+}
+.form-container .input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1.5px #146aeb solid;
+    padding: 10px;
+    width: 100%;
+    font-family: "roboto";
+    background-color: #F4F6F6;
+}
+.form-container .input:focus{
+    outline: none;
+}
